@@ -1,4 +1,12 @@
-# Contracts
+# Solidity Playground
+
+## Setup
+
+1. `git clone <url>`
+2. [Download Binaries](#binary-download)
+3. `git clone <url>`
+4. `mkdir bin`
+5. [Setup Binaries](#binary-setup)
 
 ## Useful Commands
 
@@ -17,11 +25,9 @@
 ./forge test --gas-report
 
 # Symlinks
-ln -sf /Users/philipp/Desktop/tinker.nosync/alphahunt/contracts/bin/forge forge
-
-ln -sf /Users/philipp/Desktop/tinker.nosync/alphahunt/contracts/bin/cast cast
-
-ln -sf /Users/philipp/Desktop/tinker.nosync/alphahunt/contracts/bin/anvil anvil
+ln -sf ./bin/forge forge
+ln -sf ./bin/cast cast
+ln -sf ./bin/anvil anvil
 ```
 
 ## Useful Resources
@@ -29,3 +35,22 @@ ln -sf /Users/philipp/Desktop/tinker.nosync/alphahunt/contracts/bin/anvil anvil
 - https://getfoundry.sh
 - https://book.getfoundry.sh
 - https://github.com/foundry-rs/foundry
+
+## Binary Download
+
+1. Download Binaries from the [GitHub Releases page](https://github.com/foundry-rs/foundry/releases)
+2. `tar -xf foundry_<release-info>.tar.gz`
+3. `mv forge ~/Desktop/`
+4. `mv cast ~/Desktop/`
+5. `mv anvil ~/Desktop/`
+
+## Binary Setup
+
+1. `cd ~/Desktop`
+2. `mv ./forge <path-to-project-root-directory>/bin`
+3. `mv ./cast <path-to-project-root-directory>/bin`
+4. `mv ./anvil <path-to-project-root-directory>/bin`
+5. `ln -sf ./bin/forge forge`
+6. `ln -sf ./bin/cast cast`
+7. `ln -sf ./bin/anvil anvil`
+8. `./protostar test`
